@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.mob-nav-container{
+	display:none;
+	position:fixed;
+	top:5%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.show {display:block;}
+
+@media screen and (max-width: 500px) {
+	.mob-nav-container{
+		display:block;
+		position:fixed;
+		left:15%;
+		z-index:1000;
+	}
+
+}
